@@ -1,0 +1,21 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect Daikin Mobile Controller",
+        "description": "Enter the same username and password used in the Daikin mobile app.",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid username or password",
+      "cannot_connect": "Failed to connect to Daikin cloud"
+    },
+    "abort": {
+      "already_configured": "This account is already configured"
+    }
+  }
+}

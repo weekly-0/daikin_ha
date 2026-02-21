@@ -1,0 +1,13 @@
+{
+  "domain": "daikin_smartapp",
+  "name": "Daikin Mobile Controller",
+  "version": "0.1.15",
+  "documentation": "https://github.com/weekly-0/daikin_ha",
+  "issue_tracker": "https://github.com/weekly-0/daikin_ha/issues",
+  "config_flow": true,
+  "requirements": [],
+  "codeowners": [
+    "@noah"
+  ],
+  "iot_class": "cloud_polling"
+}
