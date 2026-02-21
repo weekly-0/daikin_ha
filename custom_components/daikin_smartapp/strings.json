@@ -12,6 +12,7 @@
     },
     "error": {
       "invalid_auth": "Invalid username or password",
+      "client_discovery_failed": "Could not retrieve app client credentials from Daikin servers",
       "cannot_connect": "Failed to connect to Daikin cloud"
     },
     "abort": {

@@ -72,8 +72,11 @@ class DaikinSmartAppConfigFlow(ConfigFlow, domain=DOMAIN):
                     password,
                     client_uuid,
                 )
-            except DaikinAuthError:
-                errors["base"] = "invalid_auth"
+            except DaikinAuthError as err:
+                if "resolve app client credentials" in str(err).lower() or "client credential discovery" in str(err).lower():
+                    errors["base"] = "client_discovery_failed"
+                else:
+                    errors["base"] = "invalid_auth"
             except Exception:
                 errors["base"] = "cannot_connect"
             else:
